@@ -2220,9 +2220,9 @@ $(recovery_ramdisk): $(INTERNAL_RECOVERY_RAMDISK_FILES_TIMESTAMP)
 # $(1): output file
 # $(2): optional kernel file
 define build-recoveryimage-target
-  @echo "Generating Changelog"
-  bash vendor/aosp/tools/changelog "$(PRODUCT_OUT)"
-  $(hide) mv $(PRODUCT_OUT)/Changelog.txt $(PRODUCT_OUT)/AospExtended-$(EXTENDED_VERSION)-$(shell $(DATE_FROM_FILE) +%Y%m%d-%H%M)-Changelog.txt
+  #@echo "Generating Changelog"
+  #bash vendor/aosp/tools/changelog "$(PRODUCT_OUT)"
+  #$(hide) mv $(PRODUCT_OUT)/Changelog.txt $(PRODUCT_OUT)/AospExtended-$(EXTENDED_VERSION)-$(shell $(DATE_FROM_FILE) +%Y%m%d-%H%M)-Changelog.txt
   $(if $(filter true,$(PRODUCT_SUPPORTS_VBOOT)), \
     $(MKBOOTIMG) $(if $(strip $(2)),--kernel $(strip $(2))) $(INTERNAL_RECOVERYIMAGE_ARGS) \
                  $(INTERNAL_MKBOOTIMG_VERSION_ARGS) $(BOARD_RECOVERY_MKBOOTIMG_ARGS) \
