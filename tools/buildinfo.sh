@@ -58,4 +58,4 @@ fi
 
 echo "# end build properties"
 
-BUILDINFO_AEX=vendor/aosp/build/tools/buildinfo_aex.sh && test -f $BUILDINFO_AEX && source $BUILDINFO_AEX
+BUILDINFO_ARCANA=vendor/aosp/build/tools/buildinfo_arcana.sh && test -f $BUILDINFO_ARCANA && source $BUILDINFO_ARCANA
