@@ -44,8 +44,8 @@ PRODUCT_PACKAGES += \
 
 # Additional settings used in all AOSP builds
 PRODUCT_VENDOR_PROPERTIES := \
-    ro.config.ringtone?=The_big_adventure.ogg \
-    ro.config.notification_sound?=Popcorn.ogg
+    ro.config.ringtone?=oneplusring.ogg \
+    ro.config.notification_sound?=oneplus.ogg
 
 # Put en_US first in the list, so make it default.
 PRODUCT_LOCALES := en_US

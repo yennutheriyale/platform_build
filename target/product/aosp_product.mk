@@ -23,8 +23,8 @@ $(call inherit-product-if-exists, vendor/aosp/config/google_audio.mk)
 
 # Additional settings used in all AOSP builds
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone?=The_big_adventure.ogg \
-    ro.config.notification_sound?=Popcorn.ogg \
+    ro.config.ringtone?=oneplusring.ogg \
+    ro.config.notification_sound?=oneplus.ogg \
     ro.com.android.dataroaming?=true \
 
 # More AOSP packages
